@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Взрослая поликлиника «Троицкая» · Октябрьский проспект 5А · Троицк</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1e293b;line-height:1.6}
+header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0}
+.hi{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.li{width:42px;height:42px;background:linear-gradient(135deg,#1a3a5c,#2dd4bf);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:18px}
+.lt{font-weight:700;font-size:16px;color:#1a3a5c;line-height:1.2}
+.lt span{display:block;font-weight:400;font-size:12px;color:#64748b}
+.hp{color:#1a3a5c;font-weight:600;font-size:15px;text-decoration:none}
+.hero{margin-top:72px;background:linear-gradient(135deg,#1a3a5c,#0f2942);color:#fff;position:relative;overflow:hidden}
+.hi2{max-width:1200px;margin:0 auto;padding:80px 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hb{display:inline-flex;align-items:center;gap:8px;background:rgba(45,212,191,.15);border:1px solid rgba(45,212,191,.3);color:#2dd4bf;padding:8px 16px;border-radius:100px;font-size:13px;font-weight:500;margin-bottom:24px}
+h1{font-size:48px;font-weight:800;line-height:1.1;margin-bottom:20px}
+h1 em{color:#2dd4bf;font-style:normal}
+.hs{font-size:18px;color:rgba(255,255,255,.75);margin-bottom:32px;max-width:480px}
+.hst{display:flex;gap:32px;margin-bottom:40px;flex-wrap:wrap}
+.hst div{display:flex;flex-direction:column}
+.hst strong{font-size:32px;font-weight:800;color:#2dd4bf}
+.hst span{font-size:13px;color:rgba(255,255,255,.6)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:600;font-size:15px;text-decoration:none;transition:all .3s;cursor:pointer;border:none;font-family:inherit}
+.bp{background:#2dd4bf;color:#1a3a5c;box-shadow:0 4px 14px rgba(45,212,191,.35)}
+.bp:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(45,212,191,.45)}
+.bo{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.bo:hover{background:rgba(255,255,255,.08)}
+.him{position:relative}
+.him img{width:100%;border-radius:20px;box-shadow:0 20px 25px -5px rgba(0,0,0,.08);object-fit:cover;height:420px}
+.him::before{content:'';position:absolute;top:-20px;right:-20px;width:100%;height:100%;border:2px solid #2dd4bf;border-radius:20px;opacity:.3;z-index:-1}
+section{padding:100px 24px}
+.si{max-width:1200px;margin:0 auto}
+.sh{text-align:center;max-width:700px;margin:0 auto 60px}
+.sl{color:#14b8a6;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.sh h2{font-size:36px;font-weight:800;color:#1a3a5c;line-height:1.2;margin-bottom:16px}
+.sh p{color:#64748b;font-size:17px}
+.about{background:#f8fafc}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.av{position:relative}
+.av img{width:100%;border-radius:24px;box-shadow:0 20px 25px -5px rgba(0,0,0,.08)}
+.avf{position:absolute;bottom:-20px;right:-20px;background:#fff;padding:20px 24px;border-radius:16px;box-shadow:0 20px 25px -5px rgba(0,0,0,.08);max-width:260px}
+.avf strong{display:block;font-size:24px;color:#14b8a6;font-weight:800}
+.avf span{font-size:13px;color:#64748b}
+.af{display:flex;flex-direction:column;gap:20px}
+.afe{display:flex;gap:16px;padding:20px;background:#fff;border-radius:16px;border-left:4px solid #2dd4bf;box-shadow:0 4px 6px -1px rgba(0,0,0,.05)}
+.afi{width:48px;height:48px;min-width:48px;background:#f0f9ff;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#14b8a6}
+.afe h4{font-size:16px;font-weight:700;color:#1a3a5c;margin-bottom:4px}
+.afe p{font-size:14px;color:#64748b}
+.specs{background:linear-gradient(180deg,#f0f9ff 0%,#f8fafc 100%)}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sc{background:#fff;border-radius:20px;padding:28px 24px;box-shadow:0 4px 6px -1px rgba(0,0,0,.05);transition:all .3s;text-align:center}
+.sc:hover{transform:translateY(-6px);box-shadow:0 20px 25px -5px rgba(0,0,0,.08)}
+.sc svg{width:40px;height:40px;color:#14b8a6;margin-bottom:14px}
+.sc h3{font-size:15px;font-weight:700;color:#1a3a5c;margin-bottom:6px}
+.sc p{font-size:13px;color:#64748b}
+.diag{background:#fff}
+.dg{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.dc{background:#f8fafc;border-radius:20px;padding:32px;text-align:center;transition:all .3s}
+.dc:hover{background:#f0f9ff}
+.dc svg{width:48px;height:48px;color:#1a3a5c;margin-bottom:16px}
+.dc h3{font-size:18px;font-weight:700;color:#1a3a5c;margin-bottom:8px}
+.dc p{font-size:15px;color:#64748b}
+.tasks{background:#f8fafc}
+.tg{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.tc{background:#fff;padding:32px;border-radius:20px;box-shadow:0 4px 6px -1px rgba(0,0,0,.05);transition:all .3s;position:relative;overflow:hidden}
+.tc::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,#2dd4bf,#1a3a5c)}
+.tc:hover{transform:translateY(-4px);box-shadow:0 20px 25px -5px rgba(0,0,0,.08)}
+.tn{font-size:48px;font-weight:800;color:rgba(45,212,191,.15);line-height:1;margin-bottom:12px}
+.tc h3{font-size:18px;font-weight:700;color:#1a3a5c;margin-bottom:10px}
+.tc p{font-size:15px;color:#64748b}
+.info{background:linear-gradient(135deg,#1a3a5c,#0f2942);color:#fff}
+.info .sh h2,.info .sh p{color:#fff}
+.info .sh p{opacity:.7}
+.ig{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ic{background:rgba(255,255,255,.06);border-radius:20px;padding:32px;border:1px solid rgba(255,255,255,.1)}
+.ic h3{font-size:18px;font-weight:700;color:#2dd4bf;margin-bottom:12px}
+.ic p,.ic li{font-size:15px;color:rgba(255,255,255,.75);line-height:1.8}
+.ic ul{margin-left:18px}
+.ic a{color:#2dd4bf;text-decoration:none}
+.ic a:hover{text-decoration:underline}
+.comp{background:#fff}
+.cpt{background:#f8fafc;border-radius:20px;overflow:hidden;border:1px solid #e2e8f0}
+.cpr{display:grid;grid-template-columns:1fr 1fr 1fr;padding:24px 32px;border-bottom:1px solid #e2e8f0;align-items:center}
+.cpr:last-child{border-bottom:none}
+.cpr.h{background:#1a3a5c;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#2dd4bf}
+.cpr .pa{font-weight:500;color:#1a3a5c}
+.cpr .ba{color:#64748b}
+.cpr .go{color:#14b8a6;font-weight:600}
+.fcta{background:#f8fafc;padding:100px 24px}
+.fci{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.fci h2{font-size:36px;font-weight:800;color:#1a3a5c;line-height:1.2;margin-bottom:20px}
+.fci>p{color:#64748b;font-size:17px;margin-bottom:32px}
+.ms{display:flex;gap:12px;flex-wrap:wrap}
+.mb{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;transition:all .2s}
+.mb:hover{transform:translateY(-2px)}
+.mbt{background:#e3f2fd;color:#0088cc}.mbt:hover{background:#0088cc;color:#fff}
+.mbw{background:#e8f5e9;color:#25d366}.mbw:hover{background:#25d366;color:#fff}
+.mbv{background:#e8eaf6;color:#4a76a8}.mbv:hover{background:#4a76a8;color:#fff}
+.fcc{background:#fff;padding:40px;border-radius:24px;box-shadow:0 20px 25px -5px rgba(0,0,0,.08);border:1px solid #e2e8f0}
+.fcc h3{font-size:20px;font-weight:700;color:#1a3a5c;margin-bottom:8px}
+.fcc p{color:#64748b;font-size:15px;margin-bottom:24px}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-size:13px;font-weight:600;color:#64748b;margin-bottom:6px}
+.fg input,.fg textarea{width:100%;padding:14px 16px;border:1.5px solid #e2e8f0;border-radius:12px;font-size:15px;font-family:inherit;outline:none}
+.fg input:focus,.fg textarea:focus{border-color:#2dd4bf}
+.fg textarea{resize:vertical;min-height:100px}
+.bf{width:100%}
+footer{background:#1a3a5c;color:rgba(255,255,255,.6);padding:48px 24px;text-align:center;font-size:14px}
+footer a{color:#2dd4bf;text-decoration:none}
+.toast{position:fixed;bottom:32px;right:32px;background:#1a3a5c;color:#fff;padding:16px 24px;border-radius:16px;box-shadow:0 20px 25px -5px rgba(0,0,0,.08);font-weight:500;transform:translateY(120px);opacity:0;transition:all .4s;z-index:9999}
+.toast.show{transform:translateY(0);opacity:1}
+@media(max-width:1024px){.hi2{grid-template-columns:1fr;gap:40px}.him{order:-1}.him img{height:300px}.sg{grid-template-columns:repeat(2,1fr)}.ag{grid-template-columns:1fr}.dg{grid-template-columns:1fr}.ig{grid-template-columns:1fr}.fci{grid-template-columns:1fr}}
+@media(max-width:640px){h1{font-size:32px}.sh h2{font-size:26px}.sg{grid-template-columns:1fr}.tg{grid-template-columns:1fr}.cpr{grid-template-columns:1fr;gap:8px;padding:20px}.cpr.h{display:none}.hst{gap:20px}.hst strong{font-size:24px}section{padding:60px 24px}.fci h2{font-size:28px}}
+</style>
+</head>
+<body>
+
+<header id="hd"><div class="hi"><a href="#" class="logo"><div class="li">+</div><div class="lt">ГБУЗ «Поликлиника «Троицкая» ДЗМ<span>Взрослая поликлиника · Троицк, Октябрьский проспект 5А</span></div></a><a href="tel:84958510829" class="hp">8 (495) 851-08-29</a></div></header>
+
+<section class="hero"><div class="hi2"><div><div class="hb">Открытие 24 августа 2026 года</div><h1>Взрослая поликлиника <em>«Троицкая»</em></h1><p class="hs">Современное четырёхэтажное здание площадью более 13 300 м² по новому московскому стандарту. Полный спектр амбулаторной помощи: терапия, 20+ специальностей, собственная лаборатория и лучевая диагностика.</p><div class="hst"><div><strong>20+</strong><span>врачей-специалистов</span></div><div><strong>13 300 м²</strong><span>площадь здания</span></div><div><strong>637</strong><span>префаб-модулей</span></div></div><a href="#fm" class="btn bp">Записаться на приём</a> <a href="#ab" class="btn bo">Узнать больше</a></div><div class="him"><img src="https://images.unsplash.com/photo-1587351021759-3e566b2af923?w=800&q=80" alt="Новое здание поликлиники Троицкая"></div></div></section>
+
+<section class="about" id="ab"><div class="si"><div class="ag"><div class="av"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80" alt="Интерьер поликлиники"><div class="avf"><strong>24 августа 2026</strong><span>начало приёма пациентов</span></div></div><div><div class="sh" style="text-align:left;margin:0 0 32px;max-width:none"><div class="sl">О поликлинике</div><h2>Построена по новому московскому стандарту</h2><p>С 24 августа 2026 года взрослая поликлиника начала приём пациентов по новому адресу — Октябрьский проспект, 5А. Ранее поликлиника располагалась на улице Юбилейной, 5. Здание возведено с применением префаб-технологий: 637 готовых модулей, включая 540 фасадных стеновых панелей, 73 сантехнических и 24 инженерных модуля.</p></div><div class="af"><div class="afe"><div class="afi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></div><div><h4>Консультативно-диагностическое отделение</h4><p>Приём врачей-специалистов, клинико-диагностическая лаборатория, зоны реабилитации и лучевой диагностики — всё в одном здании.</p></div></div><div class="afe"><div class="afi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><h4>Безопасность и доступность</h4><p>Посты охраны, системы видеонаблюдения и пожарной сигнализации. Учтены потребности маломобильных горожан. Отдельная зона приёма пациентов с ОРВИ.</p></div></div><div class="afe"><div class="afi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><h4>Режим работы</h4><p>Пн–Пт: 08:00–20:00, Сб: 09:00–18:00, Вс: 09:00–16:00. Флюорографический кабинет: Пн–Пт 8:00–20:00 (перерывы 13:30–14:00 и 19:30–20:00).</p></div></div></div></div></div></div></section>
+
+<section class="specs"><div class="si"><div class="sh"><div class="sl">Врачи-специалисты</div><h2>Полный спектр специалистов для взрослых</h2><p>Первый уровень оказания медицинской помощи. Ведут приём:</p></div><div class="sg"><div class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><h3>Терапевты</h3><p>Участковые терапевты, врачи общей практики, ВОП</p></div><div class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><h3>Кардиолог</h3><p>Консультации, ЭКГ, ЭХО-КГ, СМАД</p></div><div class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg><h3>Невролог</h3><p>Консультации, ЭЭГ, функциональная диагностика</p></div><div class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg><h3>Эндокринолог</h3><p>Диагностика и наблюдение эндокринных заболеваний</p></div><div class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg><h3>Хирург</h3><p>Консультативный приём хирургических пациентов</p></div><div class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2 2 6.477 2 12z"/></svg><h3>Уролог</h3><p>УЗИ, лабораторная диагностика, консультации</p></div><div class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg><h3>Травматолог-ортопед</h3><p>Приём травм, рентген, консультации</p></div><div class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><h3>Стоматология</h3><p>Терапевт, хирург, ортопед — полный цикл</p></div></div></div></section>
+
+<section class="diag"><div class="si"><div class="sh"><div class="sl">Диагностика</div><h2>Современное оборудование в здании</h2><p>Не нужно ехать в другие клиники — всё исследования проходят здесь:</p></div><div class="dg"><div class="dc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><h3>Рентген и флюорография</h3><p>Цифровой рентген, флюорография, маммография</p></div><div class="dc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><h3>УЗИ-диагностика</h3><p>УЗИ органов, УЗДС, ЭХО-КГ, допплерография</p></div><div class="dc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><h3>Эндоскопия и лаборатория</h3><p>ЭГДС, холтер-мониторинг, СМАД, ФВД, ЭЭГ</p></div></div></div></section>
+
+<section class="tasks"><div class="si"><div class="sh"><div class="sl">С чем приходят к нам</div><h2>Решаем конкретные задачи</h2><p>Государственное учреждение. Работаем по ОМС и платным услугам:</p></div><div class="tg"><div class="tc"><div class="tn">1</div><h3>«Нужна справка — и желательно сегодня»</h3><p>Медосмотры для работы, справки в бассейн, на права, профосмотры — оформляем оперативно.</p></div><div class="tc"><div class="tn">2</div><h3>«Хочу понять, что со мной, и получить план»</h3><p>Разбор симптомов, обследование и понятный план действий — в одном месте, без беготни.</p></div><div class="tc"><div class="tn">3</div><h3>«Наблюдающий врач для хронического заболевания»</h3><p>Диабет, гипертония, заболевания щитовидной железы — постоянный контроль и корректировка терапии.</p></div><div class="tc"><div class="tn">4</div><h3>«Диспансеризация без потери рабочего дня»</h3><p>Комплексное обследование за 1–2 визита: анализы, ЭКГ, УЗИ, приём терапевта — всё внутри.</p></div></div></div></section>
+
+<section class="info"><div class="si"><div class="sh"><div class="sl">Как добраться и записаться</div><h2>Вся информация для пациентов</h2></div><div class="ig"><div class="ic"><h3>📍 Адрес и транспорт</h3><p>108840, г. Москва, г.о. Троицк, Октябрьский проспект, д. 5А</p><ul><li>Метро «Тёплый Стан» или «Ольховая»</li><li>Автобус № е131 до остановки «Детская поликлиника»</li><li>Переехали с ул. Юбилейной, д. 5</li></ul></div><div class="ic"><h3>📞 Телефоны</h3><ul><li><b>Справки:</b> <a href="tel:84958510829">8 (495) 851-08-29</a></li><li><b>Единая справочная:</b> <a href="tel:122">122</a> или <a href="tel:84951220221">8 (495) 122-02-21</a></li><li><b>Запись на приём:</b> <a href="tel:84955393000">8 (495) 539-30-00</a></li><li><b>E-mail:</b> <a href="mailto:pt@zdrav.mos.ru">pt@zdrav.mos.ru</a></li></ul></div><div class="ic"><h3>📝 Как записаться</h3><ul><li>Медицинский портал <a href="https://emias.info" target="_blank">ЕМИАС.ИНФО</a></li><li>Мобильное приложение ЕМИАС.ИНФО</li><li>Официальный сайт <a href="https://mos.ru" target="_blank">mos.ru</a></li><li>Инфоматы и стойки информации в поликлинике</li><li>По телефону единой справочной службы</li></ul></div></div></div></section>
+
+<section class="comp"><div class="si"><div class="sh"><div class="sl">Почему новое здание</div><h2>Что изменилось после переезда</h2><p>Сравнение старого и нового адреса:</p></div><div class="cpt"><div class="cpr h"><div>Параметр</div><div>Старый адрес (Юбилейная, 5)</div><div>Новый адрес (Октябрьский пр-т, 5А)</div></div><div class="cpr"><div class="pa">Здание</div><div class="ba">Устаревшее здание</div><div class="go">✓ Новое, 13 300 м², префаб-технологии</div></div><div class="cpr"><div class="pa">Оборудование</div><div class="ba">Базовое оснащение</div><div class="go">✓ Современное, новый московский стандарт</div></div><div class="cpr"><div class="pa">Зона ОРВИ</div><div class="ba">Общий поток пациентов</div><div class="go">✓ Отдельная изолированная зона</div></div><div class="cpr"><div class="pa">Доступность</div><div class="ba">Стандартная</div><div class="go">✓ Учтены потребности маломобильных</div></div></div></div></section>
+
+<section class="fcta" id="fm"><div class="fci"><div><h2>Запишитесь на приём</h2><p>Оставьте заявку — администратор подберёт удобное время и подскажет, какие документы взять с собой. Или напишите нам в мессенджеры.</p><div class="ms"><a href="#" class="mb mbt">Telegram</a> <a href="#" class="mb mbw">WhatsApp</a> <a href="#" class="mb mbv">ВКонтакте</a></div></div><div class="fcc"><h3>Оставить заявку</h3><p>Перезвоним в течение 15 минут в рабочее время</p><form onsubmit="return sb(event)"><div class="fg"><label>Ваше имя</label><input type="text" placeholder="Иван Иванович" required></div><div class="fg"><label>Телефон</label><input type="tel" placeholder="+7 (___) ___-__-__" required></div><div class="fg"><label>Что вас беспокоит? (необязательно)</label><textarea placeholder="Опишите симптомы или укажите нужного врача..."></textarea></div><button type="submit" class="btn bp bf">Записаться на приём</button></form></div></div></section>
+
+<footer><p>ГБУЗ «Поликлиника «Троицкая» ДЗМ · Взрослая поликлиника · Троицк, Октябрьский проспект 5А</p><p style="margin-top:8px"><a href="tel:84958510829">8 (495) 851-08-29</a> · <a href="tel:122">122</a> · <a href="mailto:pt@zdrav.mos.ru">pt@zdrav.mos.ru</a></p><p style="margin-top:8px;opacity:.6">Работаем по программам ОМС и платным услугам · Заведующая: Краевая Галина Георгиевна</p></footer>
+
+<div class="toast" id="t">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
+
+<script>
+window.addEventListener('scroll',()=>document.getElementById('hd').style.boxShadow=window.scrollY>20?'0 4px 6px -1px rgba(0,0,0,.05)':'none');
+function sb(e){e.preventDefault();const t=document.getElementById('t');t.classList.add('show');e.target.reset();setTimeout(()=>t.classList.remove('show'),4000);return false}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'})}));
